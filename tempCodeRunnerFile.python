@@ -1,0 +1,17 @@
+
+def get_response(category):
+    responses = {
+        "intro": "Machine Learning is a field of AI that enables computers to learn from data.",
+        "algorithms": "Some common algorithms include Linear Regression, Decision Trees, and SVM.",
+        "supervised": "Supervised Learning involves training a model on labeled data.",
+        "unsupervised": "Unsupervised Learning is used when the data is unlabeled, like clustering.",
+        "eval": "Model evaluation includes metrics like accuracy, precision, recall, and F1-score.",
+        "course": "This course covers ML basics, algorithms, supervised/unsupervised learning, and model evaluation."
+    }
+    return responses.get(category, "Sorry, I don't understand that question.")
+
+category = "intro"
+a = get_response(category)
+print(a)
+
+
